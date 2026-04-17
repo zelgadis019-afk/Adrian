@@ -14,7 +14,6 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
       .from('blog_posts')
       .select('*')
       .eq('slug', params.slug)
-      .eq('published', true)
       .single()
     if (!error && data) post = data
   } catch (_) {}
