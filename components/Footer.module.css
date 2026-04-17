@@ -1,0 +1,36 @@
+.footer {
+  padding: 3rem 4rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-family: var(--serif);
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  color: var(--dim);
+}
+.socials {
+  display: flex;
+  gap: 1.2rem;
+}
+.socials a {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--dim);
+  transition: color 0.3s;
+}
+.socials a:hover { color: var(--gold); }
+.copy {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  color: var(--dim);
+}
+@media (max-width: 600px) {
+  .footer { flex-direction: column; gap: 1.5rem; text-align: center; padding: 2rem; }
+}

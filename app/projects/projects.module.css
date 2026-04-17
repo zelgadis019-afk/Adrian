@@ -1,0 +1,87 @@
+.main { min-height: 100vh; padding: 10rem 4rem 6rem; background: var(--bg); }
+.header { margin-bottom: 3rem; max-width: 700px; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5px;
+  background: var(--border);
+}
+.card {
+  background: var(--bg);
+  padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s;
+}
+.card:hover { background: var(--bg2); }
+.card::before {
+  content: '';
+  position: absolute; top: 0; left: 0;
+  width: 100%; height: 2px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s;
+}
+.card:hover::before { transform: scaleX(1); }
+.cardNum {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  color: var(--dim);
+  margin-bottom: 1.5rem;
+}
+.cardTitle {
+  font-family: var(--serif);
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: var(--text);
+  margin-bottom: 0.8rem;
+  line-height: 1.2;
+}
+.cardDesc {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+}
+.cardTags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; }
+.cardTag {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  color: var(--dim);
+  background: var(--bg3);
+  padding: 0.3rem 0.7rem;
+}
+.cardLinks { display: flex; gap: 1.2rem; }
+.cardLink {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  transition: opacity 0.3s;
+}
+.cardLink:hover { opacity: 0.7; }
+.cardEmpty {
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  min-height: 260px;
+  border: 1px dashed var(--border2);
+  background: var(--bg) !important;
+  text-align: center;
+}
+.cardEmptyText {
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  color: var(--dim);
+  margin-bottom: 0.4rem;
+}
+.cardEmptySub {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  color: var(--dim);
+  letter-spacing: 0.1em;
+}
+@media (max-width: 900px) { .main { padding: 8rem 2rem 4rem; } }

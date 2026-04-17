@@ -1,0 +1,212 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 4rem 6rem;
+  position: relative;
+  overflow: hidden;
+}
+.heroBgText {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--serif);
+  font-size: clamp(8rem, 20vw, 22rem);
+  font-weight: 300;
+  color: rgba(255,255,255,0.015);
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  letter-spacing: -0.02em;
+}
+.heroLine {
+  width: 1px; height: 120px;
+  background: linear-gradient(to bottom, transparent, var(--gold));
+  margin-bottom: 2.5rem;
+  animation: fadeUp 1s 0.3s both;
+}
+.heroTag {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.2rem;
+  animation: fadeUp 0.9s 0.5s both;
+}
+.heroName {
+  font-family: var(--serif);
+  font-size: clamp(3.5rem, 8vw, 7.5rem);
+  font-weight: 300;
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  animation: fadeUp 0.9s 0.7s both;
+}
+.heroName em { font-style: italic; color: var(--gold2); }
+.heroTagline {
+  margin-top: 1.8rem;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--muted);
+  max-width: 480px;
+  animation: fadeUp 0.9s 0.9s both;
+}
+.heroCta {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 2.8rem;
+  animation: fadeUp 0.9s 1.1s both;
+}
+.scrollHint {
+  position: absolute;
+  right: 4rem; bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  animation: fadeUp 0.9s 1.4s both;
+}
+.scrollHint span {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--dim);
+  writing-mode: vertical-rl;
+}
+.scrollLine {
+  width: 1px; height: 60px;
+  background: linear-gradient(to bottom, var(--dim), transparent);
+}
+
+/* ABOUT */
+.section { padding: 7rem 4rem; background: var(--bg); }
+.sectionDark { padding: 7rem 4rem; background: var(--bg2); }
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 6rem;
+  align-items: start;
+  max-width: 1100px;
+}
+.photoWrap { position: relative; aspect-ratio: 3/4; }
+.photoPlaceholder {
+  width: 100%; height: 100%;
+  min-height: 420px;
+  background: var(--bg3);
+  border: 1px solid var(--border2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+.photoPlaceholder span {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  color: var(--dim);
+  text-transform: uppercase;
+}
+.photoWrap::after {
+  content: '';
+  position: absolute;
+  top: 12px; left: 12px;
+  width: 100%; height: 100%;
+  border: 1px solid var(--gold);
+  opacity: 0.25;
+  pointer-events: none;
+  z-index: -1;
+}
+.bio { font-size: 0.96rem; color: var(--muted); line-height: 1.85; margin-bottom: 2.5rem; }
+.bio p + p { margin-top: 1.2rem; }
+.metaGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+.metaItem { border-left: 1px solid var(--border2); padding-left: 1rem; }
+.metaLabel {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--dim);
+  margin-bottom: 0.3rem;
+}
+.metaValue { font-size: 0.9rem; color: var(--text); font-weight: 400; }
+.skillsGrid { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.5rem; }
+.skillTag {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 0.45rem 1rem;
+  transition: border-color 0.3s, color 0.3s;
+}
+.skillTag:hover { border-color: var(--gold); color: var(--gold); }
+
+/* EXPERIENCE */
+.expList { max-width: 900px; }
+.expItem {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 3rem;
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.expPeriod {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--dim);
+  padding-top: 0.3rem;
+  line-height: 1.5;
+}
+.expPeriod strong { color: var(--gold); display: block; font-weight: 400; }
+.expRole {
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 0.3rem;
+}
+.expCompany {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.9rem;
+}
+.expDesc { font-size: 0.9rem; color: var(--muted); line-height: 1.8; }
+.expTags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+.expTag {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  color: var(--dim);
+  background: var(--bg3);
+  padding: 0.3rem 0.7rem;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 900px) {
+  .hero { padding: 0 2rem 5rem; }
+  .section, .sectionDark { padding: 5rem 2rem; }
+  .aboutGrid { grid-template-columns: 1fr; gap: 3rem; }
+  .expItem { grid-template-columns: 1fr; gap: 0.5rem; }
+  .scrollHint { display: none; }
+}
+@media (max-width: 600px) {
+  .heroCta { flex-direction: column; }
+  .metaGrid { grid-template-columns: 1fr; }
+}

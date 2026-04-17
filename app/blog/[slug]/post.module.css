@@ -1,0 +1,74 @@
+.main { min-height: 100vh; padding: 9rem 4rem 6rem; background: var(--bg); }
+.back { margin-bottom: 3rem; }
+.backLink {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--dim);
+  transition: color 0.3s;
+}
+.backLink:hover { color: var(--gold); }
+.article { max-width: 740px; }
+.header { margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
+.title {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 300;
+  line-height: 1.15;
+  color: var(--text);
+  margin: 1rem 0 1.2rem;
+}
+.meta {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+.body {
+  font-size: 1.05rem;
+  color: var(--muted);
+  line-height: 1.9;
+}
+.body h2 {
+  font-family: var(--serif);
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: var(--text);
+  margin: 2.5rem 0 1rem;
+}
+.body h3 {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--text);
+  margin: 2rem 0 0.8rem;
+}
+.body p { margin-bottom: 1.4rem; }
+.body a { color: var(--gold); border-bottom: 1px solid rgba(201,168,76,0.3); transition: border-color 0.3s; }
+.body a:hover { border-color: var(--gold); }
+.body code {
+  font-family: var(--mono);
+  font-size: 0.85em;
+  background: var(--bg3);
+  padding: 0.15em 0.4em;
+  color: var(--gold2);
+}
+.body pre {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  padding: 1.5rem;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+.body blockquote {
+  border-left: 2px solid var(--gold);
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+  color: var(--dim);
+  font-style: italic;
+  font-family: var(--serif);
+  font-size: 1.1rem;
+}
+@media (max-width: 900px) { .main { padding: 8rem 2rem 4rem; } }
