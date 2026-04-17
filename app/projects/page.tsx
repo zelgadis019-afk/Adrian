@@ -39,7 +39,7 @@ export default async function ProjectsPage() {
               <div className={styles.cardDesc}>{project.description}</div>
               {project.tech && (
                 <div className={styles.cardTags}>
-                  {(Array.isArray(project.tech) ? project.tech : project.tech.split(',')).map((t: string) => (
+                  {(Array.isArray(project.tech) ? project.tech : (project.tech as string).split(',')).map((t: string) => (
                     <span key={t} className={styles.cardTag}>{t.trim()}</span>
                   ))}
                 </div>
