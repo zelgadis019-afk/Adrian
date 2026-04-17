@@ -4,6 +4,8 @@ import { supabase } from '@/lib/supabase'
 import styles from './blog.module.css'
 import Link from 'next/link'
 
+export const revalidate = 0
+
 export default async function BlogPage() {
   let posts: any[] = []
   try {
@@ -23,7 +25,6 @@ export default async function BlogPage() {
           <div className="section-label">04 — Blog</div>
           <div className="section-title">Thoughts &amp; <em>writings</em></div>
         </div>
-
         {posts.length === 0 ? (
           <div className={styles.empty}>
             <p>No posts yet.</p>
