@@ -5,6 +5,8 @@ import styles from './post.module.css'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
+export const revalidate = 0
+
 export default async function BlogPostPage({ params }: { params: { slug: string } }) {
   let post: any = null
   try {
