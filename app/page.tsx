@@ -13,21 +13,21 @@ export default function Home() {
 
   const experience = [
     {
-      period: '2022 — Present',
+      period: '2025 — Present',
       company: 'Appen',
       role: 'Platform Support Analyst',
       desc: 'Supported clients and project managers within the Appen Data Annotation Platform (ADAP). Responsible for job creation, configuration, and troubleshooting job settings for contributors, ensuring smooth platform operations and optimal project delivery.',
       tags: ['ADAP','Platform Ops','Client Support','Job Configuration'],
     },
     {
-      period: '2021 — 2022',
+      period: '2024 - 2025',
       company: 'Appen',
       role: 'IT Support Analyst',
       desc: 'Delivered onsite technical support to production workers and corporate employees. Handled onboarding and offboarding processes, account provisioning, and administrative management across Microsoft Azure, Microsoft 365 Admin Center, and Google Workspace.',
       tags: ['Microsoft Azure','Microsoft 365','Google Workspace','Account Provisioning'],
     },
     {
-      period: '2019 — 2021',
+      period: '2022 — 2024',
       company: 'Infosys BPM',
       role: 'Service Desk Professional',
       desc: 'Provided end-user support and managed enterprise environments. Core responsibilities included user administration, group policy management, and troubleshooting across various IT systems with hands-on expertise in Active Directory and ServiceNow.',
