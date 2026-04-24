@@ -7,11 +7,11 @@ import styles from './projects.module.css'
 const fallbackProjects = [
   {
     id: 1,
-    title: 'AI Smart Browser',
+    title: 'This Portfolio Website',
     description: 'My first personal project — a fully deployed dark portfolio with a blog, contact form, and Supabase backend. Built with Next.js, deployed on Vercel, with Supabase for data storage.',
-    tech: ['Next.js','Supabase','Vercel','CSS'],
-    link: 'https://smart-browser-three.vercel.app/',
-    github: 'https://github.com/zelgadis019-afk/smart-browser',
+    tech: ['Next.js','Supabase','Vercel','TypeScript'],
+    link: null,
+    github: 'https://github.com/zelgadis019-afk',
   },
 ]
 
