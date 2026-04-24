@@ -10,7 +10,7 @@ const fallbackProjects = [
     title: 'AI Smart Browser',
     description: 'My first personal project — a fully deployed dark portfolio with a blog, contact form, and Supabase backend. Built with Next.js, deployed on Vercel, with Supabase for data storage.',
     tech: ['Next.js','Supabase','Vercel','CSS'],
-    link: https://smart-browser-three.vercel.app/,
+    link: ['smart-browser-three.vercel.app/']
     github: 'https://github.com/zelgadis019-afk/smart-browser',
   },
 ]
