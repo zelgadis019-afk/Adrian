@@ -72,7 +72,7 @@ export default function Home() {
                 <circle cx="28" cy="20" r="10" stroke="#888" strokeWidth="1.5"/>
                 <path d="M8 50c0-11 9-18 20-18s20 7 20 18" stroke="#888" strokeWidth="1.5" strokeLinecap="round"/>
               </svg>
-              <span>Your photo here</span>
+              <span>https://drive.google.com/file/d/1LBw8AOMU6n78DhdQXsZ40NLnqqhbxPqg/view?usp=drive_link</span>
             </div>
           </div>
           <div className={styles.aboutContent}>
