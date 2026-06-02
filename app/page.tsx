@@ -16,21 +16,21 @@ export default function Home() {
       period: '2025 — Present',
       company: 'Appen',
       role: 'Platform Support Analyst',
-      desc: 'Supported clients and project managers within the Appen Data Annotation Platform (ADAP). Responsible for job creation, configuration, and troubleshooting job settings for contributors, en[...]
+      desc: 'Supported clients and project managers within the Appen Data Annotation Platform (ADAP). Responsible for job creation, configuration, and troubleshooting job settings for contributors.',
       tags: ['ADAP','Platform Ops','Client Support','Job Configuration'],
     },
     {
       period: '2024 - 2025',
       company: 'Appen',
       role: 'IT Support Analyst',
-      desc: 'Delivered onsite technical support to production workers and corporate employees. Handled onboarding and offboarding processes, account provisioning, and administrative management across [...]
+      desc: 'Delivered onsite technical support to production workers and corporate employees. Handled onboarding and offboarding processes, account provisioning, and administrative management.',
       tags: ['Microsoft Azure','Microsoft 365','Google Workspace','Account Provisioning'],
     },
     {
       period: '2022 — 2024',
       company: 'Infosys BPM',
       role: 'Service Desk Professional',
-      desc: 'Provided end-user support and managed enterprise environments. Core responsibilities included user administration, group policy management, and troubleshooting across various IT systems w[...]
+      desc: 'Provided end-user support and managed enterprise environments. Core responsibilities included user administration, group policy management, and troubleshooting across various IT systems.',
       tags: ['Active Directory','ServiceNow','SLA Management','Incident Resolution'],
     },
   ]
@@ -76,9 +76,9 @@ export default function Home() {
           <div className={styles.aboutContent}>
             <div className="section-title">Driven by <em>curiosity,</em><br/>grounded in craft.</div>
             <div className={styles.bio}>
-              <p>I am a Business Management graduate from STI College with over four years of progressive experience in IT support and platform operations. My background spans service desk support, on[...]
-              <p>I began my career at Infosys BPM as a Service Desk Professional, providing end-user support and managing enterprise environments. I developed hands-on expertise in tools such as Activ[...]
-              <p>At Appen, I delivered onsite technical support before transitioning into a Platform Support Analyst role, where I supported clients and project managers within the Appen Data Annotati[...]
+              <p>I am a Business Management graduate from STI College with over four years of progressive experience in IT support and platform operations. My background spans service desk support, onsite technical assistance, and cloud platform operations.</p>
+              <p>I began my career at Infosys BPM as a Service Desk Professional, providing end-user support and managing enterprise environments. I developed hands-on expertise in tools such as Active Directory, ServiceNow, and Group Policy management.</p>
+              <p>At Appen, I delivered onsite technical support before transitioning into a Platform Support Analyst role, where I supported clients and project managers within the Appen Data Annotation Platform.</p>
             </div>
             <div className={styles.metaGrid}>
               {[
