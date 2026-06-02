@@ -68,7 +68,7 @@ export default function Home() {
         <div className={styles.aboutGrid}>
           <div className={styles.photoWrap}>
             <img
-              src="https://drive.google.com/uc?export=view&id=1LBw8AOMU6n78DhdQXsZ40NLnqqhbxPqg"
+              src="https://lh3.googleusercontent.com/d/1LBw8AOMU6n78DhdQXsZ40NLnqqhbxPqg"
               alt="Adrian Tapia"
               className={styles.photo}
             />
