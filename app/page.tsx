@@ -43,7 +43,7 @@ export default function Home() {
       <section className={styles.hero}>
         <div className={styles.heroBgText}>TAPIA</div>
         <div className={styles.heroLine} />
-        <div className={styles.heroTag}>IT Support Analyst &nbsp;·&nbsp; Cavite, Philippines</div>
+        <div className={styles.heroTag}>Platform Support Analyst &nbsp;·&nbsp; Cavite, Philippines</div>
         <h1 className={styles.heroName}>
           Adrian<br /><em>Tapia</em>
         </h1>
